@@ -1,13 +1,11 @@
 data/raw/
+data/vector_db/
+data/processed/identical_memory_list.json
+data/processed/memory_content_processed.json
 __pycache__/
 .env
 api_key/
-archive/
-image_embeddings.json
 node_modules/
 .DS_Store
-package-lock.json
-package.json
-data/
 tests/
 
