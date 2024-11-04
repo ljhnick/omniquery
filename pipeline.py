@@ -130,18 +130,6 @@ def retrieve(query, version='lite', topk=50):
     omni['images'] = all_media
     omni['time_cost'] = round(time_cost, 1)
     
-
-    # all_media_rag = []
-    # for memory_id in result_rag['memory_ids']:
-    #     memory_path = os.path.join(memory_folder, memory_id)
-    #     media = load_memory_media(memory_path, memory) # {image: base64, raw_data: dict}
-    #     all_media_rag.append(media)
-
-    # rag['answer'] = result_rag['answer']
-    # rag['explanation'] = result_rag['explanation']
-    # rag['images'] = all_media_rag
-    # rag['time_cost'] = round(time_cost, 1)
-
     result_final = {
         'omniquery': omni,
         'rag': rag
