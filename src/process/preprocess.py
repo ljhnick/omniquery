@@ -245,11 +245,15 @@ class ProcessMemoryContent():
                 image = Image.open(path)
                 try:
                     visual_content, cost = self.llm.generate_visual_content(image)
-                    text = detect_text(image)
                 except Exception as e:
                     print(f"Error: {e}")
                     self.memory_content_processed.remove(memory)
                     continue
+
+                try:
+                    text = detect_text(image)
+                except Exception as e:
+                    raise e
 
                 self.cost += cost
                 

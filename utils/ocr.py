@@ -5,7 +5,7 @@ import io
 import pyrootutils
 pyrootutils.setup_root(__file__, indicator=".project-root", pythonpath=True)
 
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'api_key/textintheworld-6fdf6798885d.json'
+# os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'api_key/textintheworld-6fdf6798885d.json'
 
 def detect_text(image):
     client = vision.ImageAnnotatorClient()

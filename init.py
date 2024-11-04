@@ -10,3 +10,4 @@ args = parser.parse_args()
 
 if __name__ == "__main__":
     initialize(api_key=args.api_key, folder_path=args.raw_data_folder)
+    print("Your memory is successfully indexed!")
