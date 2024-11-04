@@ -6,7 +6,7 @@ OmniQuery enables **free-form question answering** on massive personal photo alb
 
 ## To-Do List
 
-- [x] Release the source code of OmniQuery.
+- [x] Release source code for OmniQuery.
 - [ ] Add parameter control (e.g., topK).
 - [ ] Enable support for open-source language models (LLMs).
 
